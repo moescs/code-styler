@@ -61,12 +61,12 @@ var codeStyler;
             //add css if it's not here
             if ($('head link#'+cssId).length == 0) {
                 var head = $('head');
-                $('<link'
+                $.parseHTML('<link'
                     +' id="' + cssId + '"'
                     +' rel="stylesheet"'
                     +' href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/>')
                     .appendTo(head);
-                $('<style>'
+                $.parseHTML('<style>'
                     +'pre code {'
                         //customize for horizontal scrolling
                     	+'overflow-x: auto;'

@@ -13,7 +13,7 @@ var util;
 
         //create script element
         var script = document.createElement('script');
-        script.src = 'https://code.jquery.com/jquery-3.1.1.slim.min.js';
+        script.src = '//code.jquery.com/jquery-3.1.1.slim.min.js';
 
         //bind the event to the callback function
         script.onload = callback;
@@ -64,7 +64,7 @@ var codeStyler;
                 $('<link'
                     +' id="' + cssId + '"'
                     +' rel="stylesheet"'
-                    +' href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/>')
+                    +' href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/>')
                     .appendTo(head);
                 $('<style>'
                     +'pre code {'
@@ -76,7 +76,7 @@ var codeStyler;
                     .appendTo(head);
             }
             //Style code
-            imports.getCachedScript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js")
+            imports.getCachedScript("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js")
                 //and finally what we all came here for...
                 .done(function() { styleCode(); });
         }));

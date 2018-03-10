@@ -67,11 +67,12 @@ var codeStyler;
                     +' href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/>')
                     .appendTo(head);
                 $('<style>'
-                    +'pre code {'
+                    +'pre > code {'
                         //customize for horizontal scrolling
                     	+'overflow-x: auto;'
                     	+'white-space: pre;'
-                    	+'word-wrap: normal; }'
+                    	+'word-wrap: normal;'
+                        +'word-break: normal; }'
                     +'</style>')
                     .appendTo(head);
             }

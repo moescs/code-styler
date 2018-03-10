@@ -77,7 +77,7 @@ var codeStyler;
                     .appendTo(head);
             }
             //Style code
-            imports.getCachedScript("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js")
+            imports.getCachedScript("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js")
                 //and finally what we all came here for...
                 .done(function() { styleCode(); });
         }));
